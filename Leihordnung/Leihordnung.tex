@@ -1,0 +1,98 @@
+%Richtlinie des StuRa: https://www.stura.tu-dresden.de/webfm_send/29
+%Richtline des FSR MW: http://tu-dresden.de/die_tu_dresden/fakultaeten/fakultaet_maschinenwesen/fsr/fsr/protokolle/ordnungen/Richtlinie%20zur%20Ausleihe%20von%20FSR-Inventar.pdf
+
+% zu prüfen: müssen wir quix-Material auch an nicht-vS ausleihen?
+% Ausleihberechtigung prüfen: einmal im Semester vS-Status prüfen und im System hinterlegen
+
+\documentclass[a4paper]{article}
+\usepackage{german, graphicx}
+\usepackage{ifthen}
+\usepackage[utf8]{inputenc}
+
+\newcommand{\SHG}{SächsHSFG}
+\newcommand{\iFS}{Fachschaft Informatik}
+\newcommand{\iFSR}{FSR Informatik}
+\newcommand{\StuRa}{StuRa}
+\newcommand{\TUD}{TU Dresden}
+
+\pagestyle{empty}
+\renewcommand{\thepage}{}
+\renewcommand{\thesection}{§\,\arabic{section}}
+%\setcounter{section}{-1}
+
+\renewcommand{\numberline}[1]
+  {\makebox[2em][l]{#1}}
+
+\begin{document}
+
+\title{\bf Richtlinie zum Materialverleih des \\
+        \iFSR{} der\\
+        Technischen Universität Dresden\\~\\
+      \includegraphics[width=.3\textwidth]{fsrlogo}
+}
+
+\maketitle
+
+\pagebreak
+\tableofcontents
+
+\section{Allgemeines}
+
+\begin{description}
+\item[(1)] Diese Richtlinie bezieht sich auf den Verleih von Material aus dem Inventar des \iFSR{} sowie auf den Verleih von durch den \iFSR{} verwaltetem Material aus dem Inventar der \TUD.
+% letztere Formulierung bezieht sich auf Material aus den quix-Anträgen
+\end{description}
+
+\section{Ausleihberechtigte}
+
+\begin{description}
+\item[(1)] Ausleihberechtigt sind in folgender Priorität:
+
+\begin{enumerate}
+\item Mitglieder der Fachschaft Informatik der \TUD
+% diese Formulierung beinhaltet nur Mitglieder der verfassten Studierendenschaft, richtig?
+\item sonstige Fachschaftsräte der Studierendenschaft der \TUD
+%\item Hochschulgruppen der \TUD
+\item Mitglieder sonstiger Fachschaften der Studierendenschaft der \TUD
+\item nur für vom \iFSR{} verwaltetes Material aus dem Inventar der \TUD: sonstige Angehörige der Fakultät Informatik der \TUD
+\item nur für vom \iFSR{} verwaltetes Material aus dem Inventar der \TUD: sonstige Angehörige der \TUD
+\end{enumerate}
+
+Bei sich überschneidenden Anfragen von mehreren Ausleihberechtigten gleicher Priorität entscheiden Mitglieder des Fachschaftsrats in einfacher Mehrheit.
+
+\item[(2)] Für die Ausleihe ist vom Ausleihenden eine natürliche Person als Verantwortlicher für den Ausleihgegenstand zu benennen. Die Identität der Person ist durch einen amtlichen Lichtbildausweis nachzuweisen.
+\end{description}
+
+\section{Ausleihbedingungen}
+
+\begin{description}
+\item[(1)] Eine Reservierung des Materials ist vor der Ausleihe vorzunehmen. Die Modalitäten für die Reservierung werden hochschulöffentlich bekanntgegeben.
+\item[(2)] Vor der Übergabe des Materials ist die Ausleihberechtigung zu prüfen. Bei Abholung sind die Übergabe des Materials, der Übergabezustand des Materials sowie die Entgegennahme der Kaution und des Nutzungsentgelts schriftlich zu protokollieren. Desweiteren ist bei der Abholung der Rückgabezeitpunkt zu vereinbaren.
+\item[(3)] Die Kaution und die Nutzungsgebühr werden bei Abholung fällig. Sie sind bar zu entrichten.
+\item[(4)] Bei Verlust, Diebstahl, Beschädigung oder Rückgabe in einem nicht gebrauchsfähigen Zustand haftet der Ausleihende. Bei verspäteter Rückgabe wird für jeden weiteren Tag ein Zehntel der Kaution einbehalten.
+\item[(5)] Eventuelle Modifikationsvorhaben am Material müssen vor der Leihe angegeben und Details mit dem Entleiher abgesprochen und schriftlich dokumentiert werden. Dies betrifft auch Änderungen an der Firmware bei technischen Geräten.
+\item[(6)] Für die Prüfung der Ausleihbedingungen und zur Durchführung des Materialverleihs werden folgende personenbezogenen Daten erhoben, verarbeitet und gespeichert:
+\begin{enumerate}
+\item Vorname und Name
+\item Emailadresse
+\item optional alternative Kontaktdaten, zum Beispiel Handynummer
+\item Mitgliedsstatus in der verfassten Studierendenschaft
+\item Matrikelnummer
+\item duch die Benutzung des Reservierungs- und Leihsystems entstehende Metadaten, insbesondere Zeitpunkt des letzten Logins, Anzahl der versuchten Passworteingaben, Zeitpunkt der letzten Prüfung der Ausleihberechtigung und entliehenes Material mit Ausleihzeitraum
+\end{enumerate}
+
+\end{description}
+
+\section{Schlussbestimmungen}
+
+\begin{description}
+\item[(1)] Der zum Verleih zur Verfügung stehende Materialbestand wird hochschulöffentlich bekanntgegeben. Die Liste enthält die genaue Bezeichnung des Materials, die Höhe der Kaution, die Höhe des Nutzungsentgelts und gegebenenfalls detailliertere Nutzungsbedingungen.
+% letzteres für "Grill muss sauber zurückgegeben werden" etc.
+\item[(2)] Der zur Verfügung stehende Materialbestand, die Höhe der Kaution und die Höhe des Nutzungsentgelts kann vom Fachschaftrat durch Beschluss geändert werden.
+\item[(3)] Materialbestand, welcher für Veranstaltungen des \iFSR{} benötigt wird, steht während der Veranstaltung sowie während Vor- und Nachbereitung auch ohne Beschluss des Fachschaftsrats nicht zum Verleih zur Verfügung.
+\item[(4)] Diese Richtlinie wurde vom \iFSR{} in der Sitzung vom 18.08.2014 beschlossen und tritt mit Wirkung vom 01.09.2014 in Kraft. Mit Inkrafttreten dieser Richtlinie verlieren alle bisherigen Leihrichtlinien des \iFSR{} ihre Gültigkeit.
+
+\end{description}
+
+\end{document}
+

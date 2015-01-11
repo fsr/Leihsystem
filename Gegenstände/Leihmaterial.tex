@@ -1,0 +1,100 @@
+%Alle Gegenstände, die der iFSR zum Verleih anbietet
+
+\documentclass[a4paper]{article}
+\usepackage{german, graphicx}
+\usepackage{ifthen}
+\usepackage[utf8]{inputenc}
+\usepackage{eurosym}
+\usepackage{array}
+\usepackage{booktabs}
+
+\newcommand{\iFS}{Fachschaft Informatik}
+\newcommand{\iFSR}{FSR Informatik}
+
+\newcommand{\infobox}[3] %Wie bekommt man den bloeden Text vertikal in die Mitte? pls fix me
+        {\par
+                \begin{tabular}{| c | c | c| }
+                \hline
+                Anzahl: #1 & Kaution: \EUR{#2} & Zustand: #3 \\
+                \hline
+                \end{tabular} \\
+        }                
+
+
+
+\pagestyle{empty}
+
+\begin{document}
+
+\title{\bf Leihmaterialien des \iFSR \\
+        der Technische Universität Dresden \\~\\
+         \includegraphics[width=.3\textwidth]{LogoSW}
+}
+
+\maketitle
+
+%Die hier aufgelisteten Materialien werden vom iFSR zum ausleihen angeboten.
+
+\tableofcontents
+
+
+\pagebreak
+
+\section{Elektronische Geräte}
+
+\subsection{Gigabit-Switch}
+\infobox{1}{10}{Neu}
+24-Port Gigabit Desktop/Rackmount Switch von TP-Link, Model Nummer TL-SG1024D. \\
+\textbf{ Teile:} 1x Switch, 2x Handbuch, 1x schwarzes Kaltgerätekabel, 1x Verpackung
+
+\subsection{Oculus Rift Dev Kit 2}
+\infobox{1}{30}{Neu}
+Das Oculus Rift ist ein Head-Mounted Display mit einem großen Sichtfeld und schnellen Bewegungssensoren. \\
+\textbf{Teile:} 1x Headset mit Kabel, 1x Stromadapter + 4 Aufsätze, 1x Positionstracker +1x USB Kabel +1x Sync Kabel , 2x Paar Linsen, 1x Putztuch, 1x Adapter DVI zu HDMI, 1x Handbuch, 1x Box
+
+%\subsection{Raspberry Pi}
+%\infobox{5}{10}{Neu}
+
+\section{LEGO}
+
+\subsection{Lego Mindstorms Education Basis Set (EV3)}
+\infobox{3}{0}{Neu}
+Ein Basis Lego Mindstorms Set mit allen nötigen Teilen um kleine Roboter zu bauen und zu programmieren. Lego 45544. \\
+\textbf{Teile:} 1x Ladegerät, 1x NXT-Brick, 1x verschiedene Teile (siehe Auflagebild)
+
+%\subsection{Lego Mindstorms Set (EV3)}
+%\infobox{3}{0}{Neu}
+%Ein Basis Lego Mindstorms Set mit allen nötigen Teilen um kleine Roboter zu bauen und zu programmieren. Lego 31313. \\
+%\textbf{Teile:} .....
+
+%\subsection{Große Lego Box}
+%\infobox{Noch keine}{0}
+
+%\includegraphics[width=.3\textwidth]{fsrlogo}\includegraphics[width=.3\textwidth]{fsrlogo}
+
+
+\section{Gesellschaftsspiele}
+
+\subsection{Nobody is perfect}
+\infobox{1}{0}{Neu}
+Gesellschaftsspiel für 3-10 Personen. Ravensburger 27225. \\
+\textbf{Teile:} 1x Spielplan, 1x Anleitung, 1x Fragekarten Stapel, 1x verschiedene farbige Figuren, 1x Box
+
+%\subsection{Es geht seinen Gang}
+%\infobox{1}{0}
+
+\section{Sonstiges}
+
+\subsection{Großer Grill}
+\infobox{1}{10}{Neu}
+Ein Edelstahl Barbecue Holzkohlegrill mit einer Grillfläche von 600 cm$^2$. \\
+\textbf{Teile:} 1x Rost, 1x Grill
+%\includegraphics[width=.3\textwidth]{fsrlogo}\includegraphics[width=.3\textwidth]{fsrlogo}\includegraphics[width=.3\textwidth]{fsrlogo}
+
+%\subsection{Marc}
+%\infobox{1}{Over 9000}
+%Sie suchen Ordnung und Struktur im Leben? Leihen sie jetzt einen Marc und ihre Träume werden wahr! Er kommt in einer handlichen $2m X 0,5m$  Box, rufen sie jetzt an und sie erhalten einen {\em Labeldrucker} gratis dazu! \\
+%\includegraphics[width=.3\textwidth]{fsrlogo}
+
+
+\end{document}
