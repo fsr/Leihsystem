@@ -7,17 +7,19 @@
 \usepackage[utf8]{inputenc}
 \usepackage{eurosym}
 \usepackage{grffile}
+\usepackage{tabu}
 
 \newcommand{\iFS}{Fachschaft Informatik}
 \newcommand{\iFSR}{FSR Informatik}
 
 \newcommand{\infobox}[3] %Wie bekommt man den bloeden Text vertikal in die Mitte? pls fix me
         {\par
-                \begin{tabular}{| c | c | }
+        		{\tabulinesep=1.2mm
+                \begin{tabu}{| c | c |}
                 \hline
                 Anzahl: #1 & Kaution: \EUR{#3}   \\
                 \hline
-                \end{tabular} \\
+                \end{tabu}} \\ \\
         }                
 
 
@@ -174,6 +176,13 @@ Eine HD Webcam. \\
 \textbf{Teile:} Logitech c920 Webcam
 
 \includegraphics[width=.3\textwidth]{Webcam Logitech C920.jpg}
+
+\subsection{MSP430 LaunchPad Dev Kit}
+\infobox{10}{0}{0}
+Das MSP430 LaunchPad ist ein mikrocontroller development board für den MSP430.\\
+\textbf{Teile:} MSDP430 LaunchPad, Mikro-USB-Kabel, Verpackung
+
+\includegraphics[width=.3\textwidth]{LaunchPad.jpg} 
 
 \newpage
 
